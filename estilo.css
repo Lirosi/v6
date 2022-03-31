@@ -1,0 +1,207 @@
+*{font-family: 'Inconsolata', monospace; margin: 0; box-sizing: border-box;}
+
+.h1titulo-index {font-size: 20px;}
+.h1titulo-index {font-size: 1.8em;color: red;padding: 20px 0 0 0;margin-left: 20px;}
+.h2titulo-index {font-size: 1.4em;color: red;padding: 20px 0 0 0; margin-left: 20px;}
+.pedido {display: inline-block;margin-left: 20px; padding: 11px; background: red; border: 1.5px solid black; border-radius: 8px;}
+.productos {display: inline-block;margin-left: 20px;padding: 11px; background: red; border: 1.5px solid black; border-radius: 8px;}
+.calidad {color: red; display: inline-block;padding: 20px 0 0 0; margin-left: 20px;}
+
+.fondoprueba  {background-color: green;}
+.fondoprueba2 {background-color: yellow;}
+.fondoprueba3 {background-color: blue;}
+.fondoprueba4 {background-color: grey;}
+.fondoprueba5 {background-color: magenta; justify-content: center; align-items: center;}
+.h2-ubicacion {color: red;text-align: center; padding: 20px 0 0 0;}
+
+#nosotros {color: red;padding: 20px 0 0 0; margin-left: 20px;}
+#contacto {color: red;text-align: center;}
+
+#menu {background-color: white; text-align: center; display: inline;}
+#menu ul {list-style: none;margin: 0;padding: 0;}
+#menu ul li {display: inline-block;}
+#menu ul li a{color:black;display: block;padding: 8px 50px;text-decoration: none;}
+#menu ul li a:hover {background-color:indianred;}
+#ubicacion {padding: 0 ;padding-top: 50px;padding-bottom: 50px;}
+
+/*CONTACTO*/
+.fondo-contacto {background-color: pink; background-size: 100vw 100vh;}
+form {
+  width: 450px;
+  margin: auto;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.contacto {
+  color: red;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 11px;
+  font-size: 14px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 100px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#boton {
+  width: 100px;
+  background: red;
+  padding: 8px;
+  border-radius: 6px;
+
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+.p-contacto {
+  text-align: center;
+}
+.input-nombre, .input-mail, .input-mensaje {
+  border-radius: 5px;
+}
+
+/*NAV*/
+
+div img {padding: 0px 0px 0px 11px;}
+p {font-size: 1em;padding: 20px;}
+
+.header {
+  background-color: red;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: indianred;
+  transition: 0.2s;
+}
+
+/* PULSO NAV */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+/* CELULAR */
+/*NAV*/
+@media (max-width: 480px){
+  body {
+    padding-top: 50px;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: red;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.5s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: indianred;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /*CONTACTO*/
+form {
+  width: 100%;
+
+}
